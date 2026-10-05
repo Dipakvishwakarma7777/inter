@@ -1,0 +1,77 @@
+@use "./variables" as *;
+.form-group {
+  margin-bottom: 18px;
+}
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.required {
+  color: $danger;
+}
+.form-input {
+  width: 100%;
+  border: 1px solid $border;
+  background: #fff;
+  border-radius: 9px;
+  padding: 11px 12px;
+  outline: none;
+  color: $text;
+  transition: 0.15s;
+}
+.form-input:focus {
+  border-color: $primary;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+.input-error {
+  border-color: $danger;
+}
+.form-error {
+  display: block;
+  color: $danger;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.form-hint {
+  display: block;
+  color: $muted;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-card {
+  background: #fff;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 25px;
+  box-shadow: $shadow;
+}
+.narrow-content {
+  max-width: 800px;
+}
+.contact-form {
+  max-width: 650px;
+}
+.filter-bar {
+  background: #fff;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.filter-bar .form-group {
+  margin: 0;
+}

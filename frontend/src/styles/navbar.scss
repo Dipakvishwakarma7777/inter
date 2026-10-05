@@ -1,0 +1,59 @@
+@use "./variables" as *;
+.navbar {
+  height: $navbar;
+  background: #fff;
+  border-bottom: 1px solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+.navbar-brand {
+  display: none;
+  font-weight: 800;
+}
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.notification-button {
+  position: relative;
+}
+.notification-dot {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  width: 6px;
+  height: 6px;
+  background: $danger;
+  border-radius: 50%;
+}
+.user-mini {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-left: 12px;
+  border-left: 1px solid $border;
+}
+.user-mini svg {
+  color: $primary;
+}
+.user-mini strong,
+.user-mini small {
+  display: block;
+}
+.user-mini strong {
+  font-size: 13px;
+}
+.user-mini small {
+  font-size: 11px;
+  color: $muted;
+  text-transform: capitalize;
+}
+.mobile-menu {
+  display: none;
+}

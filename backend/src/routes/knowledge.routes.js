@@ -1,0 +1,11 @@
+const express = require("express");
+const protect = require("../middleware/auth.middleware");
+const authorize = require("../middleware/role.middleware");
+const c = require("../controllers/knowledge.controller");
+const router = express.Router();
+router.get("/", protect, c.list);
+router.get("/:id", protect, c.get);
+router.post("/", protect, authorize("admin", "agent"), c.create);
+router.patch("/:id", protect, authorize("admin", "agent"), c.update);
+router.delete("/:id", protect, authorize("admin", "agent"), c.remove);
+module.exports = router;

@@ -1,0 +1,11 @@
+const express = require("express");
+const protect = require("../middleware/auth.middleware");
+const upload = require("../middleware/upload.middleware");
+const c = require("../controllers/attachment.controller");
+const router = express.Router();
+router.use(protect);
+router.get("/ticket/:ticketId", c.getAttachments);
+router.post("/ticket/:ticketId", upload.single("file"), c.uploadAttachment);
+router.get("/:id/download", c.downloadAttachment);
+router.delete("/:id", c.deleteAttachment);
+module.exports = router;

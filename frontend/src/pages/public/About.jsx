@@ -1,0 +1,4 @@
+import { Link } from "react-router-dom";
+export default function About() {
+  return <div className="public-page simple-public"><header className="public-navbar"><Link className="brand" to="/">SupportDesk</Link><nav><Link to="/services">Services</Link><Link to="/faq">FAQ</Link><Link to="/contact">Contact</Link></nav></header><main className="public-container"><span className="eyebrow">ABOUT US</span><h1>Customer support without the chaos.</h1><p>SupportDesk is a ticket management interface designed to bring customers, support agents and administrators into one organized workflow.</p><div className="info-card"><h3>Our approach</h3><p>Customers create and track tickets. Agents work on assigned issues. Administrators manage users, agents, categories and the overall support operation.</p></div></main></div>;
+}

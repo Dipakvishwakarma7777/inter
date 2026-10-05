@@ -1,0 +1,5 @@
+import { Link } from "react-router-dom";
+const faqs = [["What is a ticket?","A ticket is a support request created by a customer and tracked until resolution."],["Can I see my previous tickets?","Yes. The customer dashboard contains your ticket history and current status."],["Who can manage all tickets?","Administrators can view and manage all tickets, while agents work with assigned tickets."],["Can I change my password?","Use the forgot-password flow or your profile page when the backend endpoint is connected."]];
+export default function FAQ() {
+  return <div className="public-page simple-public"><header className="public-navbar"><Link className="brand" to="/">SupportDesk</Link><nav><Link to="/about">About</Link><Link to="/services">Services</Link><Link to="/contact">Contact</Link></nav></header><main className="public-container"><span className="eyebrow">FAQ</span><h1>Frequently asked questions</h1><div className="faq-list">{faqs.map(([q,a])=><details key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></main></div>;
+}

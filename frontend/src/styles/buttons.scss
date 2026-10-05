@@ -1,0 +1,43 @@
+@use "./variables" as *;
+.btn {
+  border: 0;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  transition: 0.18s;
+  padding: 11px 17px;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  background: $primary;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: $primary-dark;
+}
+.btn-secondary {
+  background: #eef2ff;
+  color: $primary;
+}
+.btn-ghost {
+  background: transparent;
+  color: $text;
+  border: 1px solid $border;
+}
+.btn-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.btn-sm {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.btn-lg {
+  padding: 14px 20px;
+  font-size: 15px;
+}

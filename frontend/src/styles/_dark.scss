@@ -1,0 +1,124 @@
+html.dark {
+  color-scheme: dark;
+  background: #0b1120;
+  color: #e2e8f0;
+}
+
+html.dark body {
+  background: #0b1120;
+  color: #e2e8f0;
+}
+
+html.dark p {
+  color: #94a3b8;
+}
+
+html.dark .navbar,
+html.dark .stat-card,
+html.dark .section-card,
+html.dark .quick-card,
+html.dark .ticket-card,
+html.dark .form-card,
+html.dark .filter-bar,
+html.dark .info-card,
+html.dark .feature,
+html.dark .faq-list details,
+html.dark .auth-card,
+html.dark .modal,
+html.dark .error-state,
+html.dark .empty-state,
+html.dark .category-row {
+  background: #111827;
+  border-color: #273449;
+  color: #e2e8f0;
+}
+
+html.dark .public-page,
+html.dark .simple-public {
+  background: #0b1120;
+}
+
+html.dark .public-navbar {
+  background: rgba(17, 24, 39, 0.95);
+  border-color: #273449;
+}
+
+html.dark .public-navbar nav {
+  color: #94a3b8;
+}
+
+html.dark .hero,
+html.dark .auth-page {
+  background: linear-gradient(135deg, #111827, #0b1120 55%, #10231d);
+}
+
+html.dark .icon-button {
+  color: #94a3b8;
+}
+
+html.dark .icon-button:hover {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+html.dark .form-input,
+html.dark .message-box textarea {
+  background: #0b1120;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+html.dark .form-input::placeholder,
+html.dark .message-box textarea::placeholder {
+  color: #64748b;
+}
+
+html.dark .data-table th,
+html.dark .data-table td,
+html.dark .footer,
+html.dark .user-mini {
+  border-color: #273449;
+}
+
+html.dark .ticket-detail-meta > span,
+html.dark .message {
+  background: #1e293b;
+}
+
+html.dark .stat-icon,
+html.dark .btn-secondary {
+  background: #25234b;
+}
+
+html.dark .btn-ghost {
+  color: #e2e8f0;
+  border-color: #334155;
+}
+
+html.dark .btn-danger {
+  background: #451a1a;
+  color: #fca5a5;
+}
+
+html.dark .success-box {
+  background: #123021;
+  color: #86efac;
+}
+
+html.dark .alert-error {
+  background: #451a1a;
+  color: #fca5a5;
+  border-color: #7f1d1d;
+}
+
+html.dark .alert-success {
+  background: #123021;
+  color: #86efac;
+  border-color: #166534;
+}
+
+html.dark .alert-info {
+  background: #172554;
+  color: #bfdbfe;
+  border-color: #1e40af;
+}
